@@ -1,8 +1,5 @@
-from flask import *
+from config import *
 from mail import *
-
-#instanciar servidor
-app = Flask(__name__)
 
 # ~~~ rutas ~~~
 @app.route("/")
@@ -25,4 +22,4 @@ def contact():
 
 #inicia servidor
 if __name__ == "__main__":
-    app.run(debug = True, port=5071)
+    app.run(debug = False)

@@ -1,10 +1,9 @@
+from config import *
 import smtplib
 
 #globales
 PROVIDER = "smtp.gmail.com"
 PUERTO = 587
-MY_EMAIL = "javier.mtgt@gmail.com"
-MY_PASSWORD = "chjo iolj nqgm yjcl"
 
 def enviarCorreo(asunto:str, cuerpo:str, correoDestinatario:str)->str:
     try:
