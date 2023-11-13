@@ -13,10 +13,11 @@ def contact():
     personaCorreo = request.form['correo']
     personaMsg = request.form['mensaje']
 
-    destinatario = "javiermor_g@hotmail.com"
+    destinatario = CONFIG_DESTINATARIO
     asunto = "Contacto desde :: maderarte ::"
     cuerpo = f"Esta persona de nombre: {personaNombre}\n correo: {personaCorreo}\n telefono: {personaTelefono}\n escribio:\n{personaMsg}"
     enviarCorreo(asunto, cuerpo, destinatario)
+    print(destinatario)
 
     return redirect(url_for('home'))
 
