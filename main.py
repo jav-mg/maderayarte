@@ -17,7 +17,7 @@ def contact():
     asunto = "Contacto desde :: maderarte ::"
     cuerpo = f"Esta persona de nombre: {personaNombre}\n correo: {personaCorreo}\n telefono: {personaTelefono}\n escribio:\n{personaMsg}"
     enviarCorreo(asunto, cuerpo, destinatario)
-    print(destinatario)
+    print(f"destinatario:{destinatario}")
 
     return redirect(url_for('home'))
 
